@@ -24,6 +24,8 @@ class BeerDetailViewController: UITableViewController {
         let headerView = UIImageView(frame: frame)
         let imageURL = URL(string: beer?.imageURL ?? "")
         
+        
+        //header에 맥주 이미지 표시
         headerView.contentMode = .scaleAspectFit
         headerView.kf.setImage(with: imageURL, placeholder: UIImage(named: "beer_icon"))
         

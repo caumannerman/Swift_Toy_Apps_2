@@ -19,7 +19,8 @@ struct Beer: Decodable {
             "#" + $0.replacingOccurrences(of: " ", with: "")
                 .replacingOccurrences(of: ".", with: "")
         }
-        return hashtags?.joined(separator: " ") ?? ""
+       
+        return  hashtags?.joined(separator: " ") ?? ""
     }
     
     enum CodingKeys: String, CodingKey {
